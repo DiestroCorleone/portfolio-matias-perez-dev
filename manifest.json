@@ -1,0 +1,29 @@
+{
+	"short_name": "Portfolio Matías Pérez",
+	"name": "Portfolio Matías Pérez | Desarrollador Web Full Stack",
+	"description": "Desarrollador web con conocimientos de HTML, CSS, JS, PHP, SQL y React. Apasionado por la tecnología y la programación, aquí podrán ver algunos de mis trabajos. Gracias por la visita!",
+	"icons": [
+		{
+			"src": "https://diestrocorp.com.ar/portfolio-matias-perez-dev/favicon.ico",
+			"type": "image/ico",
+			"sizes": "32x32",
+			"purpose": "maskable any"
+		},
+		{
+			"src:": "https://diestrocorp.com.ar/portfolio-matias-perez-dev/img/icon.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "maskable any"
+		},		
+		{
+			"src": "https://diestrocorp.com.ar/portfolio-matias-perez-dev/img/icon-md.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable any"
+		}	
+	],
+	"start_url": "https://diestrocorp.com.ar/portfolio-matias-perez-dev/index.html",
+	"background_color": "#FF4500",
+	"display": "fullscreen",
+	"theme_color": "#FF4500"
+}

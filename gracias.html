@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Matías Gabriel Pérez, desarrollador web con conocimientos de HTML, CSS, JS, PHP, SQL y React. Apasionado por la tecnología y la programación, aquí podrán ver algunos de mis trabajos. Gracias por la visita!">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Matías Gabriel Pérez desarrollador web, desarrollo web, programación, html, css, javascript, php, sql, react, react native">
+	<meta name="author" content="DiestroCorp | FB/IG/TW @DiestroCorp | www.diestrocorp.com.ar">
+	<meta name="theme-color" content="#FF4500">
+	<link rel="manifest" href="manifest.json">
+	<script>
+		if('serviceWorker' in navigator){
+			navigator.serviceWorker.register('sw.js');
+		};
+	</script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel = "icon" href = "img/favicon.ico" size = "16x16" type = "image/ico">
+	<link rel="apple-touch-icon" href="img/icon.png">
+	<title>Matías Pérez | Bienvenid@s a mi Portfolio</title>
+<!----------GOOGLE FONTS---------->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+<!----------QUARK CSS---------->
+	<style type="text/css">
+	/*Define colors and for your website*/
+		:root {
+			/*Body text color*/
+			--primary: #171717;
+			/*Body background color*/
+			--secondary: snow;
+			/*Main accent color*/
+			--tertiary: orangered;
+			/*2nd accent color*/
+			--quaternary: #75ff19;
+			/*Main font*/
+			--main-font: Montserrat, sans-serif;
+			/*Secondary font*/
+			--secondary-font: Montserrat, sans-serif;
+		}
+
+	/*Personalized styles*/
+		*::selection {
+			background-color: var(--quaternary);
+			color: var(--primary);
+		}
+
+		/*Scrollbar*/
+		::-webkit-scrollbar{
+			width: 1rem;
+		}
+
+		::-webkit-scrollbar-track{
+		  background: var(--primary);
+		}
+
+		::-webkit-scrollbar-thumb{
+		  background: var(--tertiary); 
+		}
+
+		::-webkit-scrollbar-thumb:hover{
+		  background: var(--quaternary); 
+		}
+
+		@media screen and (max-width: 800px){
+			#experience p {
+				margin-bottom: 1rem;
+			}
+		}	
+	</style>
+</head>
+<body id="body" class="main-font">
+<!----------NAV---------->
+	<nav class="col-full" id="menu">
+		<div class="col-3-quarter no-margin">
+			<ul class="flex flex-row between no-margin col-full">
+				<li class="hover-border-bottom-md-tertiary padded"><a title="menú" href = "#menu" class="">&#9776;</a></li>
+				<li class="hover-border-bottom-md-tertiary padded"><a title="cerrar menú" href = "#" class="">x</a></li>
+				<li class="hover-border-bottom-md-tertiary padded"><a title="Inicio" href="#home">Inicio</a></li>
+				<li class="hover-border-bottom-md-tertiary padded"><a title="Portfolio" href="#portfolio">Portfolio</a></li>
+				<li class="hover-border-bottom-md-tertiary padded"><a title="Sobre mí" href="#about">Sobre mí</a></li>
+				<li class="hover-border-bottom-md-tertiary padded"><a title="Contacto" href="#form">Contacto</a></li>
+				<li class="hover-border-bottom-md-tertiary padded" onclick="darkMode();" title="Activar/Desactivar Modo Oscuro"><i class="fa fa-fw fa-lightbulb-o"></i></li>
+			</ul>
+		</div>
+	</nav>
+<!----------HEADER---------->
+	<header class="col-3-quarter no-margin full-vh grid-center padded" id="home">
+		<div>
+			<h1>Gracias por tu mensaje!</h1>
+			<h3><span class="color-tertiary">Te responderé a la brevedad.</span></h3><br>
+			<p>
+				<strong>Pasión</strong> por lo que hago, <strong>dedicación</strong> en lo que emprendo.<br><br>
+				Disfruto <strong>programar</strong> y <strong>aprender</strong>. Me acompañás en este viaje?<br><br>
+			</p><br>
+			<div class="flex flex-row-on-phone">
+				<h3><a href="https://www.linkedin.com/in/matias-gabriel-perez/" title="LinkedIn Matías Pérez" target="_blank"><i class="fa-fw fa fa-linkedin" style="color:#0077b5;"></i></a></h3>
+				<h3><a href="https://github.com/DiestroCorleone" title="GitHub Matías Pérez" target="_blank"><i class="fa-fw fa fa-github"></i></a></h3>
+				<h3 style="margin-right: 10px;"><a href="https://diestrocorleone.github.io/curriculum/index.html" title="Currículum Vitae Online Matías Pérez" target="_blank"><i class="fa fa-address-card fa-fw" style="color:grey;"></i></a></h3>
+				<h3 style="margin: auto;" class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary"><a title="Descargar curriculum Matías Pérez" href="files/cv-matias-perez-es.pdf" target="_blank" download><i class="fa fa-fw fa-download color-quaternary"></i> <small>Descargar CV</small></a></h3>
+			</div>
+		</div>
+	</header><br><br><br>
+<!----------MAIN---------->
+	<main class="col-3-quarter no-margin flex flex-column padded" id="portfolio">
+		<h2 class="color-tertiary">Proyectos</h2><br>
+		<div class="flex flex-row col-full">
+			<article class="col-half flex flex-column between padded">
+				<img src="img/weatherify.png" class="img-responsive" alt="Weatherify aplicación" loading="lazy"><br><br>
+				<h4 class="color-tertiary">Weatherify, Aplicación Móvil</h4><br>
+				<div class="flex flex-row-on-phone flex-wrap around portfolio-tags">
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">React Native</small>
+					</p>
+					<p class="color-tertiary">					
+						<small class="border-sm-tertiary padded-sm">JavaScript</small>
+					</p>
+					<p class="color-tertiary">					
+						<small class="border-sm-tertiary padded-sm">SQLite</small>
+					</p>
+					<p class="color-tertiary">					
+						<small class="border-sm-tertiary padded-sm">Expo</small>
+					</p><br>
+				</div>
+				<p>Aplicación que consume API de OpenWeatherMap para consultar clima, guardar resultados y ver en mapa.</p><br>
+				<div class="flex flex-row">					
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" style="margin-right: 2rem;"><a href="https://github.com/DiestroCorleone/proyecto-ibm-grupo-95" title="Repositorio GitHub Weatherify" target="_blank"><i class="fa fa-fw fa-code" target="_blank"></i> Code</a></h4>
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" ><a href="https://snack.expo.dev/@diestro/proyecto-ibm-final/" title="Weatherify Demo App en Snack" target="_blank"><i class="fa fa-fw fa-check"></i> Demo</a></h4>
+				</div>
+			</article>
+			<article class="col-half flex flex-column between padded">
+				<img src="img/quizzical.png" class="img-responsive" alt="Quizzical juego React" loading="lazy"><br><br>
+				<h4 class="color-tertiary">Quizzical, React Game</h4><br>
+				<div class="flex flex-row-on-phone flex-wrap around portfolio-tags">
+					<p class="color-tertiary">					
+						<small class="border-sm-tertiary padded-sm">React</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">Git</small>
+					</p>
+					<p class="color-tertiary">			
+						<small class="border-sm-tertiary padded-sm">HTML</small>
+					</p>
+					<p class="color-tertiary">					
+						<small class="border-sm-tertiary padded-sm">CSS</small>
+					</p>
+					<p class="color-tertiary">					
+						<small class="border-sm-tertiary padded-sm">Vercel</small>
+					</p>
+				</div><br>
+				<p>Aplicación de preguntas y respuestas desarrollada en base a la API de <a title="Open Trivia Database Website" target="_blank" href="https://opentdb.com/">Open Trivia DB</a></p><br>
+				<div class="flex flex-row">					
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" style="margin-right: 2rem;"><a href="https://github.com/DiestroCorleone/Quizzical-App" title="Repositorio GitHub Quizzical" target="_blank"><i class="fa fa-fw fa-code" target="_blank"></i> Code</a></h4>
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" ><a href="https://quizzical-app-8bozbghr8-diestrocorleone.vercel.app/" title="Quizzical App on Vercel" target="_blank"><i class="fa fa-fw fa-check"></i> Play</a></h4>
+				</div>
+			</article>
+		</div>
+
+		<div class="flex flex-row col-full">
+			<article class="col-half flex flex-column between padded">
+				<img src="img/diestrocorp.png" class="img-responsive" alt="DiestroCorp" loading="lazy"><br><br>
+				<h4 class="color-tertiary">DiestroCorp Sitio Web</h4><br>
+				<div class="flex flex-row-on-phone flex-wrap around portfolio-tags">
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">HTML</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">CSS</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">JavaScript</small>
+					</p>
+					<p class="color-tertiary">					
+						<small class="border-sm-tertiary padded-sm">PHP</small>
+					</p>
+				</div><br>
+				<p>Website de mi emprendimiento de Desarrollo Web, con form de contacto y calculadora de presupuesto.</p><br>
+				<div class="flex flex-row">					
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" style="margin-right: 2rem;"><a href="https://github.com/DiestroCorleone/diestrocorp" title="Repositorio GitHub DiestroCorp" target="_blank"><i class="fa fa-fw fa-code" target="_blank"></i> Code</a></h4>
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" ><a href="https://diestrocorp.com.ar" title="DiestroCorp Sitio Web" target="_blank"><i class="fa fa-fw fa-check"></i> Visitar</a></h4>
+				</div>
+			</article>
+			<article class="col-half flex flex-column between padded">
+				<img src="img/tenzies.png" class="img-responsive" alt="Tenzies App" loading="lazy"><br><br>
+				<h4 class="color-tertiary">Tenzies React Game</h4><br>
+				<div class="flex flex-row-on-phone flex-wrap around portfolio-tags">
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">React</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">Git</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">HTML</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">CSS</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">JavaScript</small>
+					</p>
+				</div><br>
+				<p>Juego desarrollado en React, emplea hooks de estado, efecto, las dependencias <em>nanoid</em> y <em>react-confetti</em>, lógica y azar.</p><br>
+				<div class="flex flex-row">					
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" style="margin-right: 2rem;"><a href="https://github.com/DiestroCorleone/tenzies-app" title="Repositorio GitHub Tenzies App" target="_blank"><i class="fa fa-fw fa-code"></i> Code</a></h4>
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" ><a href="https://tenzies-app-chi.vercel.app/" title="Tenzies Vercel App" target="_blank"><i class="fa fa-fw fa-check"></i> Play</a></h4>
+				</div>
+			</article>
+		</div>
+
+		<div class="flex flex-row col-full">
+			<article class="col-half flex flex-column between padded">
+				<img src="img/anproducciones.png" class="img-responsive" alt="AN Producciones landing" loading="lazy"><br><br>
+				<h4 class="color-tertiary">AN Producciones Landing Page</h4><br>
+				<div class="flex flex-row-on-phone flex-wrap around portfolio-tags">
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">HTML</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">CSS</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">JavaScript</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">PHP</small>
+					</p>
+				</div><br>
+				<p>Agencia Integral de Publicidad tradicional y digital.</p><br>
+				<div class="flex flex-row">					
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" style="margin-right: 2rem;"><a href="https://github.com/DiestroCorleone/agencia-publicidad-landing" title="Repositorio ANProducciones" target="_blank"><i class="fa fa-fw fa-code" target="_blank"></i> Code</a></h4>
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" ><a href="https://anproducciones.com.ar/landing/"	title="AN Producciones landing" target="_blank"><i class="fa fa-fw fa-check"></i> Visitar</a></h4>
+				</div>
+			</article>
+			<article class="col-half flex flex-column between padded">
+				<img src="img/mistragran.png" class="img-responsive" alt="Mistragran editor de imágenes" loading="lazy"><br><br>
+				<h4 class="color-tertiary">Mistragran Editor de Imágenes</h4><br>
+				<div class="flex flex-row-on-phone flex-wrap around portfolio-tags">
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">HTML</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">CSS</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">JavaScript</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">Git</small>
+					</p>
+				</div><br>
+				<p>Editor de imágenes inspirado en la estética de Instagram.</p><br>
+				<div class="flex flex-row">					
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" style="margin-right: 2rem;"><a href="https://github.com/DiestroCorleone/image-editor-css" title="Repositorio Mistragran editor de imágenes" target="_blank"><i class="fa fa-fw fa-code" target="_blank"></i> Code</a></h4>
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" ><a href="https://diestrocorleone.github.io/image-editor-css/index.html" title="Mistragran editor de imágenes" target="_blank"><i class="fa fa-fw fa-check"></i> Visitar</a></h4>
+				</div>
+			</article>
+		</div>
+
+		<div class="flex flex-row col-full">
+			<article class="col-half flex flex-column between padded">
+				<img src="img/laviejacasona.png" class="img-responsive" alt="La Vieja Casona landing" loading="lazy"><br><br>
+				<h4 class="color-tertiary">La Vieja Casona Landing Page</h4><br>
+				<div class="flex flex-row-on-phone flex-wrap around portfolio-tags">
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">HTML</small>
+					</p>
+					<p class="color-tertiary">					
+						<small class="border-sm-tertiary padded-sm">CSS</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">JavaScript</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">PHP</small>
+					</p>
+				</div><br>
+				<p>Salón de fiestas y eventos.</p><br>
+				<div class="flex flex-row">					
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" style="margin-right: 2rem;"><a href="https://github.com/DiestroCorleone/landing-page-salon-eventos/tree/main" title="La Vieja Casona GitHub" target="_blank"><i class="fa fa-fw fa-code"></i> Code</a></h4>
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" ><a href="https://laviejacasona.com.ar/landing-2023/" title="La Vieja Casona landing" target="_blank"><i class="fa fa-fw fa-check"></i> Visitar</a></h4>
+				</div>
+			</article>
+			<article class="col-half flex flex-column between padded">
+				<img src="img/lonelycross.png" class="img-responsive" alt="LonelyCross landing" loading="lazy"><br><br>
+				<h4 class="color-tertiary">LonelyCross Landing Page</h4><br>
+				<div class="flex flex-row-on-phone flex-wrap around portfolio-tags">				
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">HTML</small>
+					</p>
+					<p class="color-tertiary">
+						<small class="border-sm-tertiary padded-sm">CSS</small>
+					</p>
+
+					<p class="color-tertiary">					
+						<small class="border-sm-tertiary padded-sm">JavaScript</small>
+					</p>
+					<p class="color-tertiary">					
+						<small class="border-sm-tertiary padded-sm">PHP</small>
+					</p>
+				</div><br>
+				<p>Agencia de publicidad y marketing online.</p><br>
+				<div class="flex flex-row">					
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" style="margin-right: 2rem;"><a href="https://github.com/DiestroCorleone/agencia-publicidad-mkt-landing" title="Repositorio GitHub LonelyCross" target="_blank"><i class="fa fa-fw fa-code"></i> Code</a></h4>
+					<h4 class="border-bottom-md-tertiary hover-border-bottom-sm-tertiary" ><a href="http://digitalaim.com.ar/lonelycross/" title="LonelyCross landing" target="_blank"><i class="fa fa-fw fa-check"></i> Demo</a></h4>
+				</div>
+			</article>
+		</div>
+	</main><br><br><br>
+<!----------ABOUT---------->
+	<div class="col-3-quarter no-margin flex flex-row padded" id="about">
+		<div class="col-half padded">
+			<img  loading="lazy" src="img/profile.jpg" class="img-responsive rounded-soft" alt="Matías Pérez foto">
+		</div>
+		<div class="col-half padded">
+			<h4>Un gusto conocoerte,</h4>
+			<h3 class="color-tertiary">soy Matías Pérez</h3>
+			<p>Desarrollador Web Freelance</p>
+			<h4 class="color-tertiary font-lite">Programar, diseñar, aprender y enseñar.</h4><br><hr><br>
+			<p>Gracias por visitar mi portfolio. Soy un apasionado (sí, apasionado) desarrollador Full Stack. Me manejo principalmente con los tradicionales y confiables <strong>HTML, CSS, JavaScript, PHP y SQL</strong>, siempre buscando las soluciones más simples y eficientes a problemas complejos. También cuento con conocimientos en <strong>React y, React Nativel</strong>, en los que cada día busco adquirir más experiencia. Desde que descubrí la programación, hace unos cuantos años a modo de hobbie, mi gusto por esta labor fue creciendo y hoy busco que sea mi profesión. Adoro aprender, enfrentar nuevos desafíos, y usar mi cerebro como mi principal herramienta.Sin más, sentite libre de ver algunos de mis proyectos ;)</p><br>
+		</div>
+	</div>
+<!----------EXPERIENCE---------->
+	<div class="col-3-quarter no-margin flex flex-column padded" id="experience">
+		<h3>Mi experiencia incluye pero no se limita a...</h3><br>
+		<div class="flex flex-row-on-phone flex-wrap around">
+			<p class="color-tertiary">
+				<small class="border-sm-tertiary padded-sm">HTML</small>
+			</p>
+			<p class="color-tertiary">
+				<small class="border-sm-tertiary padded-sm">CSS</small>
+			</p>
+			<p class="color-tertiary">
+				<small class="border-sm-tertiary padded-sm">JavaScript</small>
+			</p>
+			<p class="color-tertiary">
+				<small class="border-sm-tertiary padded-sm">SQL</small>
+			</p>
+			<p class="color-tertiary">
+				<small class="border-sm-tertiary padded-sm">PHP</small>
+			</p>
+			<p class="color-tertiary">
+				<small class="border-sm-tertiary padded-sm">Git</small>
+			</p>
+			<p class="color-tertiary">
+				<small class="border-sm-tertiary padded-sm">React</small>
+			</p>
+			<p class="color-tertiary">
+				<small class="border-sm-tertiary padded-sm">React Native</small>
+			</p>
+		</div>
+	</div><br><br><br>
+<!----------FORM---------->
+	<form class="col-3-quarter no-margin flex flex-column padded" method="POST" action="php/form-action.php" id="form"><br><br><br>
+		<h3 class="col-3-quarter text-center no-margin">Querés decirme algo? Soy todo ojos...</h3><br>
+		<input type="text" id="name" name="name" placeholder="Nombre" class="col-3-quarter no-margin padded-sm rounded-soft border-sm-primary rounded" required><br>
+		<input type="email" id="email" name="email" placeholder="ejemplo@email.com" class="col-3-quarter no-margin padded-sm rounded-soft border-sm-primary rounded" required><br>
+		<textarea placeholder="Dejá tu mensaje..." name="message" class="col-3-quarter no-margin padded-sm rounded-soft border-sm-primary rounded" rows="10" id="message" required></textarea><br>
+		<input type="submit" name="Enviar" class="col-3-quarter no-margin padded rounded-soft back-tertiary color-secondary font-bold hover-back-secondary hover-color-tertiary hover-border-sm-tertiary"><br><br>
+	</form>
+<!----------FOOTER---------->
+	<footer class="back-tertiary color-secondary padded-hard text-center">
+		<small>Desarrollado con &#9829; por <a href="https://diestrocorp.com.ar" target="_blank" title="DiestroCorp sitio web">DiestroCorp</a> - <span id="year"></span></small>
+	</footer>
+<!---------SCRIPTS--------->
+<script type="text/javascript" src="control.js"></script>
+<script type="text/javascript">
+window.onload = () => showYear();
+
+function showYear(){
+	const year = new Date().getFullYear();
+	document.getElementById("year").innerHTML = year;
+}
+</script>
+</body>
+</html>

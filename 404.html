@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Matías Gabriel Pérez, desarrollador web con conocimientos de HTML, CSS, JS, PHP, SQL y React. Apasionado por la tecnología y la programación, aquí podrán ver algunos de mis trabajos. Gracias por la visita!">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Matías Gabriel Pérez desarrollador web, desarrollo web, programación, html, css, javascript, php, sql, react, react native">
+	<meta name="author" content="DiestroCorp | FB/IG/TW @DiestroCorp | www.diestrocorp.com.ar">
+	<meta name="theme-color" content="#FF4500">
+	<link rel="manifest" href="manifest.json">
+	<script>
+		if('serviceWorker' in navigator){
+			navigator.serviceWorker.register('sw.js');
+		};
+	</script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel = "icon" href = "img/favicon.ico" size = "16x16" type = "image/ico">
+	<link rel="apple-touch-icon" href="img/icon.png">
+	<title>Matías Pérez | Bienvenid@s a mi Portfolio</title>
+<!----------GOOGLE FONTS---------->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+<!----------QUARK CSS---------->
+	<style type="text/css">
+	/*Define colors and for your website*/
+		:root {
+			/*Body text color*/
+			--primary: #171717;
+			/*Body background color*/
+			--secondary: snow;
+			/*Main accent color*/
+			--tertiary: orangered;
+			/*2nd accent color*/
+			--quaternary: #75ff19;
+			/*Main font*/
+			--main-font: Montserrat, sans-serif;
+			/*Secondary font*/
+			--secondary-font: Montserrat, sans-serif;
+		}
+
+	/*Personalized styles*/
+		*::selection {
+			background-color: var(--quaternary);
+			color: var(--primary);
+		}
+
+		/*Scrollbar*/
+		::-webkit-scrollbar{
+			width: 1rem;
+		}
+
+		::-webkit-scrollbar-track{
+		  background: var(--primary);
+		}
+
+		::-webkit-scrollbar-thumb{
+		  background: var(--tertiary); 
+		}
+
+		::-webkit-scrollbar-thumb:hover{
+		  background: var(--quaternary); 
+		}
+	</style>
+</head>
+<body id="body" class="main-font">
+<!----------NAV---------->
+	<nav class="col-full" id="menu">
+		<div class="col-3-quarter no-margin">
+			<ul class="flex flex-row between no-margin col-full">
+				<li class="hover-border-bottom-md-tertiary padded"><a title="menú" href = "#menu" class="">&#9776;</a></li>
+				<li class="hover-border-bottom-md-tertiary padded"><a title="cerrar menú" href = "#" class="">x</a></li>
+				<li class="hover-border-bottom-md-tertiary padded"><a title="Inicio" href="#home">Inicio</a></li>
+				<li class="hover-border-bottom-md-tertiary padded"><a title="Portfolio" href="#portfolio">Portfolio</a></li>
+				<li class="hover-border-bottom-md-tertiary padded"><a title="Sobre mí" href="#about">Sobre mí</a></li>
+				<li class="hover-border-bottom-md-tertiary padded"><a title="Contacto" href="#form">Contacto</a></li>
+				<li class="hover-border-bottom-md-tertiary padded" onclick="darkMode();" title="Activar/Desactivar Modo Oscuro"><i class="fa fa-fw fa-lightbulb-o"></i></li>
+			</ul>
+		</div>
+	</nav>
+<!----------HEADER---------->
+	<header class="col-3-quarter no-margin full-vh grid-center padded" id="home">
+		<div>
+			<h1>Error 404!</h1>
+			<h3><span class="color-tertiary">La página que buscás no existe.</span></h3><br>
+			<p>
+				<strong>Como en todo viaje, a veces podemos perdernos. El botón de abajo te ayudará a volver a casa.<br><br>
+			</p><br>
+			<a href="index.html"><button class="padded rounded-soft back-tertiary color-secondary font-bold hover-back-secondary hover-color-tertiary hover-border-sm-tertiary" style="font-family: var(--primary)"><h2>Volver a inicio</h2></button></a>
+		</div>
+	</header><br><br><br>
+<!----------FOOTER---------->
+	<footer class="back-tertiary color-secondary padded-hard text-center">
+		<small>Desarrollado con &#9829; por <a href="https://diestrocorp.com.ar" target="_blank" title="DiestroCorp sitio web">DiestroCorp</a> - <span id="year"></span></small>
+	</footer>
+<!---------SCRIPTS--------->
+<script type="text/javascript" src="control.js"></script>
+<script type="text/javascript">
+window.onload = () => showYear();
+
+function showYear(){
+	const year = new Date().getFullYear();
+	document.getElementById("year").innerHTML = year;
+}
+</script>
+</body>
+</html>
