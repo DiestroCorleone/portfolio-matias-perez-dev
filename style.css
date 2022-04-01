@@ -241,22 +241,6 @@ input[type="submit"], input[type="reset"]{
 	border: 1px solid var(--quaternary);
 }
 
-.hover-border-sm-primary:hover{
-	border: 1px solid var(--primary);
-}
-
-.hover-border-sm-secondary:hover{
-	border: 1px solid var(--secondary);
-}
-
-.hover-border-sm-tertiary:hover{
-	border: 1px solid var(--tertiary);
-}
-
-.hover-border-sm-quaternary:hover{
-	border: 1px solid var(--quaternary);
-}
-
 .border-bottom-sm-primary{
 	border-bottom: 1px solid var(--primary);
 }
@@ -270,22 +254,6 @@ input[type="submit"], input[type="reset"]{
 }
 
 .border-bottom-sm-quaternary{
-	border-bottom: 1px solid var(--quaternary);
-}
-
-.hover-border-bottom-sm-primary:hover{
-	border-bottom: 1px solid var(--primary);
-}
-
-.hover-border-bottom-sm-secondary:hover{
-	border-bottom: 1px solid var(--secondary);
-}
-
-.hover-border-bottom-sm-tertiary:hover{
-	border-bottom: 1px solid var(--tertiary);
-}
-
-.hover-border-bottom-sm-quaternary:hover{
 	border-bottom: 1px solid var(--quaternary);
 }
 
@@ -305,22 +273,6 @@ input[type="submit"], input[type="reset"]{
 	border: 2px solid var(--quaternary);
 }
 
-.hover-border-md-primary:hover{
-	border: 2px solid var(--primary);
-}
-
-.hover-border-md-secondary:hover{
-	border: 2px solid var(--secondary);
-}
-
-.hover-border-md-tertiary:hover{
-	border: 2px solid var(--tertiary);
-}
-
-.hover-border-md-quaternary:hover{
-	border: 2px solid var(--quaternary);
-}
-
 .border-bottom-md-primary{
 	border-bottom: 2px solid var(--primary);
 }
@@ -337,20 +289,61 @@ input[type="submit"], input[type="reset"]{
 	border-bottom: 2px solid var(--quaternary);
 }
 
+/*Borders with hovers*/
+.hover-border-sm-primary,
+.hover-border-sm-secondary,
+.hover-border-sm-tertiary,
+.hover-border-sm-quaternary {
+	border: 1px solid transparent;
+}
+
+.hover-border-bottom-sm-primary,
+.hover-border-bottom-sm-secondary,
+.hover-border-bottom-sm-tertiary,
+.hover-border-bottom-sm-quaternary{
+	border-bottom: 1px solid transparent;
+}
+
+.hover-border-md-primary,
+.hover-border-md-secondary,
+.hover-border-md-tertiary,
+.hover-border-md-quaternary {
+	border: 2px solid transparent;
+}
+
+.hover-border-bottom-md-primary,
+.hover-border-bottom-md-secondary,
+.hover-border-bottom-md-tertiary,
+.hover-border-bottom-md-quaternary {
+	border-bottom: 2px solid transparent;
+}
+
+.hover-border-sm-primary:hover,
+.hover-border-bottom-sm-primary:hover,
+.hover-border-md-primary:hover,
 .hover-border-bottom-md-primary:hover{
-	border-bottom: 2px solid var(--primary);
+	border-color: var(--primary);
 }
 
+.hover-border-sm-secondary:hover,
+.hover-border-bottom-sm-secondary:hover,
+.hover-border-md-secondary:hover,
 .hover-border-bottom-md-secondary:hover{
-	border-bottom: 2px solid var(--secondary);
+	border-color: var(--secondary);
 }
 
+.hover-border-sm-tertiary:hover,
+.hover-border-bottom-sm-tertiary:hover,
+.hover-border-md-tertiary:hover,
 .hover-border-bottom-md-tertiary:hover{
-	border-bottom: 2px solid var(--tertiary);
+	border-color: var(--tertiary);
 }
 
+.hover-border-sm-quaternary:hover,
+.hover-border-bottom-sm-quaternary:hover,
+.hover-border-md-quaternary:hover,
 .hover-border-bottom-md-quaternary:hover{
-	border-bottom: 2px solid var(--quaternary);
+	border-color: var(--quaternary);
 }
 
 /*Images*/
