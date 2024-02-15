@@ -1,0 +1,618 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all 200ms;
+}
+
+html{
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100%;
+	color: var(--primary);
+	background-color: var(--secondary);
+}
+
+.main-font{
+	font-family: var(--main-font);
+}
+
+.secondary-font{
+	font-family: var(--secondary-font);
+}
+
+.dark-mode{
+	color: var(--secondary);
+	background-color: var(--primary);	
+}
+
+/*General styling*/
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+button{
+	border: none;
+	padding: 1rem;
+}
+
+a, button{
+	cursor: pointer;
+}
+
+/*---------Classes start---------*/
+/*Display*/
+
+.grid-center{
+	display: grid;
+	align-items: center;
+}
+
+.flex{
+	display: flex;
+}
+
+.flex-row{
+	flex-direction: row;
+}
+
+.flex-column{
+	flex-direction: column;
+}
+
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
+.flex-row-on-phone{
+	flex-direction: row;
+}
+
+/*Justify*/
+
+.between{	
+	justify-content: space-between;
+}
+
+.around{
+	justify-content: space-around;
+}
+
+/*Grid system*/
+
+.col-quarter{
+	width: 25%;
+}
+
+.col-3-quarter{
+	width: 75%;
+}
+
+.col-third{
+	width: 33%;
+}
+
+.col-2-third{
+	width: 66%;
+}
+
+.col-half{
+	width: 50%;
+}
+
+/*Text align*/
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+/*Basic colors*/
+.color-primary{
+	color: var(--primary);
+}
+
+.color-secondary{
+	color: var(--secondary);
+}
+
+.color-tertiary{
+	color: var(--tertiary);
+}
+
+.color-quaternary{
+	color: var(--quaternary);
+}
+
+.back-primary{
+	background-color: var(--primary);
+}
+
+.back-secondary{
+	background-color: var(--secondary);
+}
+
+.back-tertiary{
+	background-color: var(--tertiary);
+}
+
+.back-quaternary{
+	background-color: var(--quaternary);
+}
+
+.hover-color-primary:hover{
+	color: var(--primary);
+}
+
+.hover-color-secondary:hover{
+	color: var(--secondary);
+}
+
+.hover-color-tertiary:hover{
+	color: var(--tertiary);
+}
+
+.hover-color-quaternary:hover{
+	color: var(--quaternary);
+}
+
+.hover-back-primary:hover{
+	background-color: var(--primary);
+}
+
+.hover-back-secondary:hover{
+	background-color: var(--secondary);
+}
+
+.hover-back-tertiary:hover{
+	background-color: var(--tertiary);
+}
+
+.hover-back-quaternary:hover{
+	background-color: var(--quaternary);
+}
+
+.hover-opacity:hover{
+	opacity: 0.8;
+}
+
+input{
+	border: none;
+}
+
+textarea{
+	resize: vertical;
+}
+
+input, textarea{
+	font-family: var(--primary);
+}
+
+input[type="submit"], input[type="reset"]{
+	cursor: pointer;
+}
+
+/*Borders*/
+
+.border-sm-primary{
+	border: 1px solid var(--primary);
+}
+
+.border-sm-secondary{
+	border: 1px solid var(--secondary);
+}
+
+.border-sm-tertiary{
+	border: 1px solid var(--tertiary);
+}
+
+.border-sm-quaternary{
+	border: 1px solid var(--quaternary);
+}
+
+.hover-border-sm-primary:hover{
+	border: 1px solid var(--primary);
+}
+
+.hover-border-sm-secondary:hover{
+	border: 1px solid var(--secondary);
+}
+
+.hover-border-sm-tertiary:hover{
+	border: 1px solid var(--tertiary);
+}
+
+.hover-border-sm-quaternary:hover{
+	border: 1px solid var(--quaternary);
+}
+
+.border-bottom-sm-primary{
+	border-bottom: 1px solid var(--primary);
+}
+
+.border-bottom-sm-secondary{
+	border-bottom: 1px solid var(--secondary);
+}
+
+.border-bottom-sm-tertiary{
+	border-bottom: 1px solid var(--tertiary);
+}
+
+.border-bottom-sm-quaternary{
+	border-bottom: 1px solid var(--quaternary);
+}
+
+.hover-border-bottom-sm-primary:hover{
+	border-bottom: 1px solid var(--primary);
+}
+
+.hover-border-bottom-sm-secondary:hover{
+	border-bottom: 1px solid var(--secondary);
+}
+
+.hover-border-bottom-sm-tertiary:hover{
+	border-bottom: 1px solid var(--tertiary);
+}
+
+.hover-border-bottom-sm-quaternary:hover{
+	border-bottom: 1px solid var(--quaternary);
+}
+
+.border-md-primary{
+	border: 2px solid var(--primary);
+}
+
+.border-md-secondary{
+	border: 2px solid var(--secondary);
+}
+
+.border-md-tertiary{
+	border: 2px solid var(--tertiary);
+}
+
+.border-md-quaternary{
+	border: 2px solid var(--quaternary);
+}
+
+.hover-border-md-primary:hover{
+	border: 2px solid var(--primary);
+}
+
+.hover-border-md-secondary:hover{
+	border: 2px solid var(--secondary);
+}
+
+.hover-border-md-tertiary:hover{
+	border: 2px solid var(--tertiary);
+}
+
+.hover-border-md-quaternary:hover{
+	border: 2px solid var(--quaternary);
+}
+
+.border-bottom-md-primary{
+	border-bottom: 2px solid var(--primary);
+}
+
+.border-bottom-md-secondary{
+	border-bottom: 2px solid var(--secondary);
+}
+
+.border-bottom-md-tertiary{
+	border-bottom: 2px solid var(--tertiary);
+}
+
+.border-bottom-md-quaternary{
+	border-bottom: 2px solid var(--quaternary);
+}
+
+.hover-border-bottom-md-primary:hover{
+	border-bottom: 2px solid var(--primary);
+}
+
+.hover-border-bottom-md-secondary:hover{
+	border-bottom: 2px solid var(--secondary);
+}
+
+.hover-border-bottom-md-tertiary:hover{
+	border-bottom: 2px solid var(--tertiary);
+}
+
+.hover-border-bottom-md-quaternary:hover{
+	border-bottom: 2px solid var(--quaternary);
+}
+
+/*Images*/
+
+.img-responsive{
+	width: 100%;
+	height: auto;
+}
+
+.img-sm{
+	width: 3rem;
+	height: auto;
+}
+
+.img-md{
+	width: 10rem;
+	height: auto;
+}
+
+.contain{
+	object-fit: contain;
+}
+
+.cover{
+	object-fit: cover;
+}
+
+.fill{
+	object-fit: fill;
+}
+
+/*Margin and Padding*/
+
+.margin-sm{
+	margin: 1rem;
+}
+
+.margin-md{
+	margin: 2rem;
+}
+
+.no-margin{
+	margin: 0 auto;
+}
+
+.padded-sm{
+	padding: 0.5rem;
+}
+
+.padded{
+	padding: 1rem;
+}
+
+.padded-hard{
+	padding: 3rem;
+}
+
+/*Heights*/
+
+.half-height{
+	height: 50%
+}
+
+.third-height{
+	height: 30%;
+}
+
+.auto-height{
+	height: auto;
+}
+
+.full-height{
+	height: 100%;
+}
+
+.full-vh{
+	height: 100vh;
+}
+
+.eigthy-vh{
+	height: 80vh;
+}
+
+.half-vh{
+	height: 50vh;
+}
+
+/*Text*/
+
+.font-bold{
+	font-weight: bold;
+}
+
+.font-lite{
+	font-weight: lighter;
+}
+
+.text-shadow{
+	text-shadow: 1px 1px 5px black;
+}
+
+/*Rounded*/
+
+.rounded-soft{
+	border-radius: 10px;
+}
+
+.rounded-hard{
+	border-radius: 50px;
+}
+
+/*Misc*/
+
+.parallax{
+	width: 100;
+	height: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box-shadow{
+	box-shadow: 1px 1px 10px black;
+}
+
+.box-shadow:hover{
+	box-shadow: 1px 1px 20px black;
+}
+
+.over-hidden{
+	overflow: hidden;
+}
+
+/*Responsiveness and Visibility*/
+
+.show-on-phone{
+	display: none;
+}
+
+.invisible{
+	display: none;
+}
+
+.fixed{
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.blur-back {
+	backdrop-filter: blur(0.8);
+}
+
+/*---------Classes end---------*/
+
+
+/*Responsive nav start*/
+nav{
+	grid-area: nav;
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}	
+
+nav li:first-of-type, nav li:nth-child(2){
+	display: none; 
+}
+
+nav li{
+	cursor: pointer;
+}
+/*Responsive nav end*/
+
+/*Float button*/
+
+.float-button{
+	position: fixed;
+	cursor: pointer;
+	z-index: 9999;
+	color: white;
+	bottom: 1rem;
+	right: 1rem;
+	width: 10%;
+	display: flex;
+	background-color: transparent;
+	border: none;
+	-webkit-filter: drop-shadow(1px 1px 10px #121213);
+	filter: drop-shadow(1px 1px 10px #121213);
+}
+
+.float-button img{
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+.float-button div{
+	float: right;
+	padding: 1rem;
+}
+
+@media screen and (max-width: 800px){
+	h1{
+		font-size: 2.5rem;
+	}
+
+	h2{
+		font-size: 2rem;	
+	}
+
+	h3{
+		font-size: 1.5rem;
+	}
+
+	nav ul, .flex-row{
+		flex-direction: column;
+	}
+
+	.padded-hard{
+		padding: 1rem;
+	}
+
+	.small-on-phone{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.hide-on-phone{
+		display: none;
+	}
+
+	.show-on-phone{
+		display: block;
+	}
+
+	.col-quarter, .col-3-quarter, .col-third, .col-2-third, .col-half{
+		width: 100%;
+	}
+
+	.float-button{
+		width: 15%;
+	}
+
+	.margin-sm{
+		margin: 0 auto;
+	}
+
+	/*Acá comienza la magia*/
+	nav:not(:target) li:first-of-type{
+		display: inherit
+	}
+	
+	nav:not(:target) li{
+		display: none;
+	}
+	
+	nav:target li{
+		display: inherit;
+	}
+	
+	nav:target li:first-of-type{
+		display: none;
+	}
+	/*Acá termina la magia*/
+}	
