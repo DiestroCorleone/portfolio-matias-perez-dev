@@ -26,11 +26,11 @@
 		$mail->Body = $emailBody;		
    		$mail->CharSet = 'UTF-8';
 		$mail->isSMTP();
-   		$mail->Host = 'diestrocorp.com.ar';//Here goes the server address (example 'smtp.gmail.com').
+   		$mail->Host = //Here goes the server address (example 'smtp.gmail.com').
    		$mail->SMTPAuth = TRUE;
   		$mail->SMTPSecure = 'tls';
-   		$mail->Username = 'form@diestrocorp.com.ar';
-   		$mail->Password = '2D5-ZPF8D';
+   		$mail->Username = //Here goes the email adress.
+   		$mail->Password = //Here goes the password.
    		$mail->Port = 587;if($mail->send()){
 			echo "<script>alert('Mensaje enviado!');window.location.replace('https://www.diestrocorp.com.ar/portfolio-matias-perez-dev/gracias.html');</script>";
 			die();
